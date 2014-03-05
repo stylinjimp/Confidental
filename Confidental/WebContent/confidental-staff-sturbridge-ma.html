@@ -1,0 +1,592 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<!-- 
+/*
+ * Owner: Confidental Dental Center
+ * File: index.html
+*/
+ -->
+<html>
+  <head>
+  	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta name="Keywords" content="">
+	<meta name="Description" content="">
+	
+<title>ConfiDENTAL Dental Staff in Sturbridge MA</title>
+
+<script src="scripts/actions.js"></script>	
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+ <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.1.1.min.js"></script>
+  
+<script type="text/javascript">
+
+	function handleBodyOnLoad()
+	{
+		$('#nav li').hover(
+				function () {
+					//show its submenu
+					
+					$('ul', this).stop().slideDown(100);
+	
+				}, 
+				function () {
+					//hide its submenu
+					
+					$('ul', this).stop().slideUp(100);			
+				}
+			);
+	
+		$("#nav li").click(function() { 
+			$('ul', this).stop().slideUp(100);	
+		  });
+	}
+
+</script>
+
+<style type="text/css">
+
+#contentTable {
+width:70%;
+}
+
+#footerTable {
+width:70%;
+}
+  
+  
+ @media (max-width: 1025px) {
+  #contentTable {
+width:98%;
+}
+
+#footerTable {
+width:98%;
+}
+}
+  
+</style>
+
+<style type="text/css">
+	
+	/* remove the list style */
+	#nav {
+		margin:0; 
+		padding:0; 
+		list-style:none;
+	}	
+	
+		/* make the LI display inline */
+		/* it's position relative so that position absolute */
+		/* can be used in submenu */
+		#nav li {
+			float:left; 
+			display:block; 
+			width:160px; 
+			background:#983222; 
+			position:relative;
+			z-index:500;
+			text-align:center;
+		}
+		
+		/* this is the parent menu */
+		#nav li a {
+			display:block; 
+			height:23px; 
+			text-decoration:none; 
+			text-align:center; 
+			line-height: 23px;
+			color: #FFFFFF;
+			font-family: Arial,sans-serif;
+			font-size: 14px;
+			font-weight: bold;
+			z-index: 100;
+		}
+
+		#nav li a:hover {
+			background:#FFFFFF;
+			color:#983222;
+		}
+	
+		/* you can make a different style for default selected value */
+		#nav a.selected {
+			color:#983222;
+		}
+		
+		#nav li.selected {
+			background:#FFFFFF;
+			color:#983222;
+		}
+	
+		/* submenu, it's hidden by default */
+		#nav ul {
+			position:absolute; 
+			left:0; 
+			display:none; 
+			padding:0; 
+			list-style:none;
+			border:1px solid #FFFFFF;
+		}
+		
+		#nav ul li {
+			width:210px;
+			float:left; 
+			background:#983222;
+			color:#FFFFFF;
+		}
+		
+		/* display block will make the link fill the whole area of LI */
+		#nav ul a {
+			display:block;  
+			height: auto;
+			color:#fff;
+			text-align:left;
+		}
+		
+		#nav ul a:hover {
+			background:#FFFFFF;
+			color:#983222;
+		}
+
+		/* fix ie6 small issue */
+		/* we should always avoid using hack like this */
+		/* should put it into separate file : ) */
+		html #nav ul {
+			margin:0 0 0 -2px;
+		}
+
+		h3 { margin:0 }
+		h4 { margin:0 }
+	
+	</style>
+
+	
+</head>
+<body style="background: url(images/bghome.png) no-repeat;background-size:cover;" onLoad="handleBodyOnLoad()">
+ 	
+ 	<table id="contentTable" align="center" style="border-collapse: collapse;">
+	<tr>
+	<td width="90%">
+		<div id="logoContentDiv" style="width:100%;height:224px;">
+			
+				<table width="100%" height="100%" align="center" style="border-collapse: collapse">
+												<tr>
+													<td width="28%">
+														<a href="index.html"><img src="images/logo.png" border="0"/></a>
+													</td>
+													<td width="44%" align="center">
+														<img src="images/conflogo.png" />
+													</td>
+													<td width="28%" align="right">
+														
+														<img src="images/confidentaladdress.png" />
+													
+													</td>
+												</tr>
+												<tr>
+												<td colspan=3>
+													<div style="height:10px"></div>
+												</td>
+												</tr>
+												<tr>
+												<td colspan=3 align="center">
+												
+													
+														<div style="display:inline-block;vertical-align:middle">
+			
+															<ul id="nav">
+															<li style="width:63px;border-top-left-radius:25px;border-bottom-left-radius:25px;"><a href="index.html">HOME</a>
+															</li>
+															<li style="width:88px"><a href="about-confidental-sturbridge-ma.html">ABOUT US</a>
+															</li>
+															<li style="width:88px"><a href="confidental-gallery-sturbridge-ma.html">GALLERY</a>
+															</li>
+															<li style="width:92px"><a href="dental-services/dental-services-sturbridge-ma.html">SERVICES</a>
+																<ul>
+																	<li><a href="dental-services/crowns-and-bridges-sturbridge-ma.html">&nbsp;&nbsp;&nbsp;Crowns and Bridges</a></li>
+																	<li><a href="dental-services/dental-hygiene-sturbridge-ma.html">&nbsp;&nbsp;&nbsp;Dental Hygiene</a></li>
+																	<li><a href="dental-services/dental-implants-sturbridge-ma.html">&nbsp;&nbsp;&nbsp;Dental Implants</a></li>
+																	<li><a href="dental-services/dentures-sturbridge-ma.html">&nbsp;&nbsp;&nbsp;Dentures</a></li>
+																	<li><a href="dental-services/digital-xrays-sturbridge-ma.html">&nbsp;&nbsp;&nbsp;Digital X-Rays</a></li>
+																	<li><a href="dental-services/fillings-sturbridge-ma.html">&nbsp;&nbsp;&nbsp;Fillings</a></li>
+																	<li><a href="dental-services/latest-dental-technologies-sturbridge-ma.html">&nbsp;&nbsp;&nbsp;Latest Technology</a></li>
+																	<li><a href="dental-services/mouthguards-and-nightguards-sturbridge-ma.html">&nbsp;&nbsp;&nbsp;Mouthguards / Nightguards</a></li>
+																	<li><a href="dental-services/orthodontics-sturbridge-ma.html">&nbsp;&nbsp;&nbsp;Orthodontics</a></li>
+																	<li><a href="dental-services/periodontics-sturbridge-ma.html">&nbsp;&nbsp;&nbsp;Periodontics</a></li>
+																	<li><a href="dental-services/preventitive-dentistry-sturbridge-ma.html">&nbsp;&nbsp;&nbsp;Preventitive Dentistry</a></li>
+																	<li><a href="dental-services/root-canal-therapy-sturbridge-ma.html">&nbsp;&nbsp;&nbsp;Root Canal Therapy</a></li>
+																	<li><a href="dental-services/teeth-whitening-sturbridge-ma.html">&nbsp;&nbsp;&nbsp;Teeth Whitening</a></li>
+																	<li><a href="dental-services/tmj-therapy-sturbridge-ma.html">&nbsp;&nbsp;&nbsp;TMJ Therapy</a></li>
+																	<li><a href="dental-services/tooth-bonding-sturbridge-ma.html">&nbsp;&nbsp;&nbsp;Tooth Bonding</a></li>
+																</ul>
+															</li>
+															<li style="width:136px;"><a href="confidental-patient-forms.html">PATIENT FORMS</a>
+															</li>
+															<li style="width:112px;border-top-right-radius:25px;border-bottom-right-radius:25px;"><a href="contact-confidental-sturbridge-ma.html">CONTACT US</a>
+															</li>
+															</ul>
+															<div class="clear"></div>
+														</div>
+									
+												
+												</td>
+												</tr>
+												</table>
+			
+			</div>
+			
+			
+		</td>
+		</tr>
+		<tr>
+		<td width="90%">
+			<div id="logoContentDivNew" style="width:100%;height:12px;text-align:center">
+				
+					
+				
+				</div>
+				
+		</td>
+		</tr>
+		<tr>
+		<td width="90%" align="center">
+	
+			
+			<div id="siteContentPane" style="width:100%;background-color:#FFF8DC">	
+						
+						<div id="contentDivTabHome0_DivContent" style="width:100%; overflow:auto;">
+							<table width="98%" align="center" border=0 cellspacing=0 cellpadding=0>
+								
+								<tr>
+								<td width="100%" valign="top" align="center">
+									<table width="95%" style="border-collapse: collapse;">
+									<tr>
+									<td width="100%" valign="top" align="center">
+									
+										<table width="98%" style="border-collapse: collapse">
+											<tr>
+											<td width="100%" valign="top" align="center">
+												<table width="100%" height="100%" style="border-collapse: collapse;">
+													<tr>
+													<td width="100%" valign="top">
+														<table width="100%" style="border-collapse: collapse;">
+														<tr>
+														<td width="20%" valign="top" style="color: #FFFFFF;font-size:34px;font-family:Arial; left: 21px; line-height: 37px;">
+															
+															<table width="100%" style="border-collapse: collapse;">
+															<tr height="15px">
+															<td width="100%">
+																
+															</td>
+															</tr>
+															<tr>
+															<td width="100%" style="font-family: Verdana;font-size: 14px; color:#black;">
+																<a href="index.html">Home</a>
+															</td>
+															</tr>
+															<tr height="5px">
+															<td width="100%">
+																
+															</td>
+															</tr>
+															<tr>
+															<td width="100%" style="font-family: Verdana;font-size: 14px; color:#black;">
+																<a href="about-confidental-sturbridge-ma.html">About Us</a>
+															</td>
+															</tr>
+															<tr height="5px">
+															<td width="100%">
+																
+															</td>
+															</tr>
+															<tr>
+															<td width="100%" style="font-family: Verdana;font-size: 14px; color:#black;">
+																<a href="dental-services/crowns-and-bridges-sturbridge-ma.html">Crowns and Bridges</a>
+															</td>
+															</tr>
+															<tr height="5px">
+															<td width="100%">
+																
+															</td>
+															</tr>
+															<tr>
+															<td width="100%" style="font-family: Verdana;font-size: 14px; color:#black;">
+																<a href="dental-services/dental-hygiene-sturbridge-ma.html">Dental Hygiene</a>
+															</td>
+															</tr>
+															<tr height="5px">
+															<td width="100%">
+																
+															</td>
+															</tr>
+															<tr>
+															<td width="100%" style="font-family: Verdana;font-size: 14px; color:#black;">
+																<a href="dental-services/dental-implants-sturbridge-ma.html">Dental Implants</a>
+															</td>
+															</tr>
+															<tr height="5px">
+															<td width="100%">
+																
+															</td>
+															</tr>
+															<tr>
+															<td width="100%" style="font-family: Verdana;font-size: 14px; color:#black;">
+																<a href="dental-services/dentures-sturbridge-ma.html">Dentures</a>
+															</td>
+															</tr>
+															<tr height="5px">
+															<td width="100%">
+																
+															</td>
+															</tr>
+															<tr>
+															<td width="100%" style="font-family: Verdana;font-size: 14px; color:#black;">
+																<a href="dental-services/digital-xrays-sturbridge-ma.html">Digital X-Rays</a>
+															</td>
+															</tr>
+															<tr height="5px">
+															<td width="100%">
+																
+															</td>
+															</tr>
+															<tr>
+															<td width="100%" style="font-family: Verdana;font-size: 14px; color:#black;">
+																<a href="dental-services/fillings-sturbridge-ma.html">Fillings</a>
+															</td>
+															</tr>
+															<tr height="5px">
+															<td width="100%">
+																
+															</td>
+															</tr>
+															<tr>
+															<td width="100%" style="font-family: Verdana;font-size: 14px; color:#black;">
+																<a href="dental-services/latest-dental-technologies-sturbridge-ma.html">Latest Technology</a>
+															</td>
+															</tr>
+															<tr height="5px">
+															<td width="100%">
+																
+															</td>
+															</tr>
+															<tr>
+															<td width="100%" style="font-family: Verdana;font-size: 14px; color:#black;">
+																<a href="dental-services/mouthguards-and-nightguards-sturbridge-ma.html">Mouthguards and Nightguards</a>	
+															</td>
+															</tr>
+															<tr height="5px">
+															<td width="100%">
+																
+															</td>
+															</tr>
+															<tr>
+															<td width="100%" style="font-family: Verdana;font-size: 14px; color:#black;">
+																<a href="dental-services/orthodontics-sturbridge-ma.html">Orthodontics</a>
+															</td>
+															</tr>
+															<tr height="5px">
+															<td width="100%">
+																
+															</td>
+															</tr>
+															<tr>
+															<td width="100%" style="font-family: Verdana;font-size: 14px; color:#black;">
+																<a href="dental-services/periodontics-sturbridge-ma.html">Periodontics</a>
+															</td>
+															</tr>
+															<tr height="5px">
+															<td width="100%">
+																
+															</td>
+															</tr>
+															<tr>
+															<td width="100%" style="font-family: Verdana;font-size: 14px; color:#black;">
+																<a href="dental-services/preventitive-dentistry-sturbridge-ma.html">Preventitive Dentistry</a>
+															</td>
+															</tr>
+															<tr height="5px">
+															<td width="100%">
+																
+															</td>
+															</tr>
+															<tr>
+															<td width="100%" style="font-family: Verdana;font-size: 14px; color:#black;">
+																<a href="dental-services/root-canal-therapy-sturbridge-ma.html">Root Canal Therapy</a>
+															</td>
+															</tr>
+															<tr height="5px">
+															<td width="100%">
+																
+															</td>
+															</tr>
+															<tr>
+															<td width="100%" style="font-family: Verdana;font-size: 14px; color:#black;">
+																<a href="dental-services/teeth-whitening-sturbridge-ma.html">Teeth Whitening</a>
+															</td>
+															</tr>
+															<tr height="5px">
+															<td width="100%">
+																
+															</td>
+															</tr>
+															<tr>
+															<td width="100%" style="font-family: Verdana;font-size: 14px; color:#black;">
+																<a href="dental-services/tmj-therapy-sturbridge-ma.html">TMJ Therapy</a>
+															</td>
+															</tr>
+															<tr height="5px">
+															<td width="100%">
+																
+															</td>
+															</tr>
+															<tr>
+															<td width="100%" style="font-family: Verdana;font-size: 14px; color:#black;">
+																<a href="dental-services/tooth-bonding-sturbridge-ma.html">Tooth Bonding</a>
+															</td>
+															</tr>
+															<tr height="20px">
+															<td width="100%">
+																
+															</td>
+															</tr>
+															<tr>
+															<td width="100%" style="font-family: Verdana;font-size: 14px; color:#black;">
+																<table width="100%" style="border-collapse: collapse;">
+																			<tr>
+																			<td width="100%" align="left">
+																				<img src="images/creditcards.png" border=0/>
+																			</td>
+																			</tr>
+																			<tr>
+																			<td width="100%" align="center">
+																				<div style="height:10px"></div>
+																			</td>
+																			</tr>
+																			<tr>
+																			<td width="100%" align="left">
+																				<span style="font-family:'Arial';font-size:16px;">
+																					<a href="care-credit-accepted-ma.html">What is Care Credit?</a>
+																				</span>
+																			</td>
+																			</tr>
+																	
+																		</table>
+															</td>
+															</tr>
+															<tr height="10px">
+															<td width="100%">
+																
+															</td>
+															</tr>
+															<tr>
+															<td width="100%" style="font-family: Verdana;font-size: 14px; color:#black;">
+																<table width="100%" style="border-collapse: collapse;">
+																		<tr>
+																		<td width="100%" align="center">
+																			<div style="height:10px"></div>
+																		</td>
+																		</tr>
+																		<tr>
+																		<td width="100%" align="left">
+																			<a href="dental-insurances-accepted-ma.html"><img src="images/insurance.png" border=0/></a>
+																		</td>
+																		</tr>
+																		<tr>
+																		<td width="100%" align="center">
+																			<div style="height:5px"></div>
+																		</td>
+																		</tr>
+																		</table>
+															</td>
+															</tr>
+															</table>
+														</td>
+														<td width="80%" valign="top" style="color: #FFFFFF;font-size:34px;font-family:Arial;">
+															
+															<table width="100%" style="border-collapse: collapse;">
+															<tr height="40px">
+															<td width="100%">
+																
+															</td>
+															</tr>
+									<tr>
+															<td width="100%">
+																<div style="color:#983222;font-family:Arial;font-size: 26px;">Our Staff</div>
+															</td>
+															</tr>
+															<tr height="20px">
+															<td width="100%">
+																
+															</td>
+															</tr>
+															<tr>
+															<td width="100%" style="color:black;font-family:Arial;font-size: 16px;">
+																<ul>
+																	<li><a href="dental-staff/confidental-dentists-sturbridge-ma.html">Dentists</a></li>
+																	<li><a href="dental-services/teeth-whitening-sturbridge-ma.html">Front Desk</a></li>
+																	<li><a href="dental-services/teeth-whitening-sturbridge-ma.html">Hygienists</a></li>
+																	<li><a href="dental-services/teeth-whitening-sturbridge-ma.html">Assistants</a></li>
+																</ul>
+															</tr>
+															</table>
+															
+														</td>
+														</tr>
+														</table>
+													</td>
+													</tr>
+												</table>
+											</td>
+											</tr>
+											
+											</table>
+									
+									</td>
+									</tr>
+									</table>
+								</td>
+								</tr>
+								
+								
+							</table>
+							</div>
+	
+						
+			</div>
+			<div id="logoSpacerDiv4" style="width:100%;height:15px;border-bottom:1px solid black;background-color:#FFF8DC"></div>
+			<div id="logoSpacerDiv5" style="width:100%;height:15px;background-color:#FFF8DC"></div>
+			<div style="width:100%;background-color:#FFF8DC">
+			
+				<table width="100%" style="border-collapse: collapse">
+				<tr>
+				<td width="50%" align="center">
+					<table width="90%" style="border-collapse: collapse">
+					<tr>
+						<td width="33%"><span style="font-size:12px;font-family:Arial"><a data-role="none" href="privacy-policy.html">Privacy Policy</a></span></td>
+						<td width="33%"><span style="font-size:12px;font-family:Arial"><a data-role="none" href="terms.html">Terms and Conditions</a></span></td>
+						<td width="33%"></td>
+					</tr>
+					</table>
+				</td>
+				<td width="50%" align="center">
+					<table width="90%" style="border-collapse: collapse">
+					<tr>
+						<td width="100%" align="right"><span style="font-size:12px;font-family:Arial">Copyright 2013.  ConfiDENTALCenter.com.</span></td>
+					</tr>
+					</table>
+				</td>
+				</tr>
+				</table>
+			
+			</div>
+			<div id="logoSpacerDiv6" style="width:100%;height:30px;background-color:#FFF8DC"></div>
+			
+		</td>
+		</tr>
+		</table>
+		
+  		
+	</body>
+</html>
